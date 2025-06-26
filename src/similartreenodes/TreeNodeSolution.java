@@ -3,8 +3,7 @@ package similartreenodes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class treenodesolution {
-    public class Solution {
+public class TreeNodeSolution {
         public boolean leafSimilar(TreeNode root1, TreeNode root2) {
             List<Integer> leaves1 = new ArrayList<>();
             List<Integer> leaves2 = new ArrayList<>();
@@ -27,4 +26,4 @@ public class treenodesolution {
             getLeaves(node.right, leaves);
         }
     }
-}
+
