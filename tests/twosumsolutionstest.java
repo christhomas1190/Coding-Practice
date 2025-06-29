@@ -43,5 +43,15 @@ public class twosumsolutionstest {
 
         assertNull(result);
     }
+    @Test
+    public void shouldReturnNull_WhenArrayHasOneIndex() {
+        //Given
+        int[] nums = {5};
+        int target = 5;
+        //when
+        int[] result = solver.solution(nums, target);
+
+        assertNull(result);
+    }
 
 }
