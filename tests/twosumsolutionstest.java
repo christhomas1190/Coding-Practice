@@ -1,3 +1,25 @@
-public class twosumsolutionstest {
+import org.junit.Assert;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import twosumsolution.twosumsolution;
 
+import static org.junit.Assert.assertArrayEquals;
+
+public class twosumsolutionstest {
+    private twosumsolution solver;
+
+    @BeforeEach
+    public void setup() {
+        solver = new twosumsolution();
+    }
+    @Test
+    public void shouldReturnCorrectIndices_WhenValidPairExists() {
+        //Given
+        int[] nums = {2, 7, 15, 20};
+        int target = 9;
+        //when
+        int[] result = solver.solution(nums, target);
+
+        assertArrayEquals(new int[]{0, 1}, result);
+    }
 }
