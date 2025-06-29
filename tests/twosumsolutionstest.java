@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import twosumsolution.twosumsolution;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNull;
 
 public class twosumsolutionstest {
     private twosumsolution solver;
@@ -22,4 +23,16 @@ public class twosumsolutionstest {
 
         assertArrayEquals(new int[]{0, 1}, result);
     }
+    @Test
+    public void shouldReturnNull_WhenNoPairExists() {
+        //Given
+        int[] nums = {2, 7, 15, 20};
+        int target = 10;
+        //when
+        int[] result = solver.solution(nums, target);
+
+        assertNull(result);
+    }
+
+
 }
