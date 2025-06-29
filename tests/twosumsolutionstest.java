@@ -33,6 +33,15 @@ public class twosumsolutionstest {
 
         assertNull(result);
     }
+    @Test
+    public void shouldReturnNull_WhenArrayisEmpty() {
+        //Given
+        int[] nums = {};
+        int target = 9;
+        //when
+        int[] result = solver.solution(nums, target);
 
+        assertNull(result);
+    }
 
 }
