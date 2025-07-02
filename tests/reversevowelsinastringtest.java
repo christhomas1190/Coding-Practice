@@ -49,6 +49,16 @@ public class reversevowelsinastringtest {
         assertEquals("wthgdqbn,c",results);
 
     }
+    @Test
+    void onlyVowelsTest (){
+        //Given
+        String input = "aeiouAEIOU";
+        //When
+        String results = mergeVowelsSolution.reverseVowels(input);
+        //Then
+        assertEquals("UOIEAuoiea",results);
+
+    }
 
 
 }
