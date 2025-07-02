@@ -60,5 +60,17 @@ public class reversevowelsinastringtest {
 
     }
 
+    @Test
+    void emptyStringTest (){
+        //Given
+        String input = "";
+
+        //When
+        String result = mergeVowelsSolution.reverseVowels(input);
+
+        //Then
+        assertEquals("",input);
+    }
+
 
 }
