@@ -37,5 +37,18 @@ public class reversevowelsinastringtest {
 
     }
 
+    @Test
+    void noVowelsTest (){
+        //Given
+        String input = "wthgdqbn,c";
+
+        //When
+        String results = mergeVowelsSolution.reverseVowels(input);
+
+        //Then
+        assertEquals("wthgdqbn,c",results);
+
+    }
+
 
 }
