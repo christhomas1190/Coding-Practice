@@ -24,6 +24,18 @@ public class reversevowelsinastringtest {
         assertEquals("Helle thore",results);
 
     }
+    @Test
+    void notAllCharactersAreLettersTest (){
+        //Given
+        String input = "Ai8756hatkWoiBV,!a";
+
+        //When
+        String results = mergeVowelsSolution.reverseVowels(input);
+
+        //Then
+        assertEquals("ai8756hotkWaiBV,!A",results);
+
+    }
 
 
 }
