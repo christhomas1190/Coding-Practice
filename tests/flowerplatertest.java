@@ -40,4 +40,17 @@ public class flowerplatertest {
         assertFalse(results);
     }
 
+    @Test
+    void noFlowerToPlant(){
+        //given
+        int [] planter = new int[] {1,0,0,0,1};
+        toPlant=0;
+
+        //when
+        boolean results = flowerToPlant.canPlaceFlowers(planter,toPlant);
+
+        //then
+        assertTrue(results);
+    }
+
 }
