@@ -2,7 +2,7 @@ import flowerplanters.FlowerToPlant;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class flowerplatertest {
 
@@ -27,6 +27,17 @@ public class flowerplatertest {
         //Then
         assertTrue(results);
     }
+    @Test
+    void emptyArrar(){
+        //Given
+        int[] planter = new int[]{};
+        toPlant=1;
 
+        //When
+        boolean results= flowerToPlant.canPlaceFlowers(planter,toPlant);
+
+        //Then
+        assertFalse(results);
+    }
 
 }
