@@ -53,4 +53,14 @@ public class flowerplatertest {
         assertTrue(results);
     }
 
+    @Test
+    void notEnoughSpaceToPlant (){
+        int[] planter= new int[]{1,0,0,0,1};
+        toPlant= 2;
+
+        boolean results = flowerToPlant.canPlaceFlowers(planter,toPlant);
+
+        assertFalse(results);
+    }
+
 }
