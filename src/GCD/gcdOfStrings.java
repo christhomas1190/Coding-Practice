@@ -13,8 +13,20 @@ package GCD;
                         isValidForStr1 = false;
                         break;
                     }
+                } boolean isValidForStr2 = true;
+                for (int j = 0; j < str2.length(); j += candidate.length()) {
+                    if (!str2.substring(j, j + candidate.length()).equals(candidate)) {
+                        isValidForStr2 = false;
+                        break;
+
+                if (isValidForStr1 && isValidForStr2) {
+                    result = candidate;
                 }
             }
         }
+
+        return result;
     }
+}
+
 
