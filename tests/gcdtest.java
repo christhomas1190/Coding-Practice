@@ -51,6 +51,16 @@ public class gcdtest {
         //then
         assertEquals("",output);
     }
+    @Test
+    void expectempty2(){
+        //given
+        String str1 = "A", str2 = "A";
+        //when
+        String output = greatestCommonDenom.gcdOfStrings(str1,str2);
+        //then
+        assertEquals("A",output);
+    }
+
 
 
 
