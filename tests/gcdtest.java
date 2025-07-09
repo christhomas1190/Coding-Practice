@@ -32,5 +32,14 @@ public class gcdtest {
         //then
         assertEquals("AB",output);
     }
+    @Test
+    void expectXYZ(){
+        //given
+        String str1 = "XYZXYZ", str2 = "XYZ";
+        //when
+        String output = greatestCommonDenom.gcdOfStrings(str1,str2);
+        //then
+        assertEquals("XYZ",output);
+    }
 
 }
