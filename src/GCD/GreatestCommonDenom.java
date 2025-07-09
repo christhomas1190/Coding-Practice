@@ -1,6 +1,6 @@
 package GCD;
 
-class GreatestCommonDenom {
+public class GreatestCommonDenom {
     public String gcdOfStrings (String str1, String str2){
         // If str1 + str2 is not equal to str2 + str1, there is no common divisor string
         if (!(str1 + str2).equals(str2 + str1)) {
