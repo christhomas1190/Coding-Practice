@@ -22,7 +22,15 @@ public class gcdtest {
         String output = greatestCommonDenom.gcdOfStrings(str1,str2);
         //then
         assertEquals("ABC",output);
-
+    }
+    @Test
+    void expectAB(){
+        //given
+        String str1 = "ABABAB", str2 = "ABAB";
+        //when
+        String output = greatestCommonDenom.gcdOfStrings(str1,str2);
+        //then
+        assertEquals("AB",output);
     }
 
 }
