@@ -14,5 +14,13 @@ public class PalndromeSolution {
         int left = 0;
         int right = numStr.length() - 1;
 
-
+        while (left < right) {
+            if (numStr.charAt(left) != numStr.charAt(right)) {
+                return false; // Not a palindrome
+            }
+            left++;
+            right--;
+        }
+        return true; // All characters matched
+    }
 }
