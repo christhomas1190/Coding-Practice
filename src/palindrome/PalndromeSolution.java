@@ -23,4 +23,5 @@ public class PalndromeSolution {
         }
         return true; // All characters matched
     }
+
 }
