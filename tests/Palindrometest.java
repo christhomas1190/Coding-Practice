@@ -71,4 +71,14 @@ void typicalTest(){
         assertFalse(result);
     }
 
+    @Test
+    void zeroOneTest(){
+        //given
+        int palindrome = 01;
+        //when
+        boolean result = palindromeSolution.isPalindrome(palindrome);
+        //then
+        assertTrue(result);
+    }
+
 }
