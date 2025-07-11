@@ -41,4 +41,14 @@ void typicalTest(){
         //then
         assertFalse(result);
     }
+
+    @Test
+    void nonPalindromDigitTest(){
+        //given
+        int palindrome = 1234;
+        //when
+        boolean result = palindromeSolution.isPalindrome(palindrome);
+        //then
+        assertFalse(result);
+    }
 }
