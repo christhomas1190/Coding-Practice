@@ -80,5 +80,13 @@ void typicalTest(){
         //then
         assertTrue(result);
     }
-
+    @Test
+    void oneZeroTest(){
+        //given
+        int palindrome = 10;
+        //when
+        boolean result = palindromeSolution.isPalindrome(palindrome);
+        //then
+        assertFalse(result);
+    }
 }
