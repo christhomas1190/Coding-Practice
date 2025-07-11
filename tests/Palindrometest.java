@@ -51,4 +51,16 @@ void typicalTest(){
         //then
         assertFalse(result);
     }
+@Test
+    void largeDigitTest(){
+        //given
+        int palindrome = 123454321;
+        //when
+        boolean result = palindromeSolution.isPalindrome(palindrome);
+        //then
+        assertTrue(result);
+    }
+
+
+
 }
