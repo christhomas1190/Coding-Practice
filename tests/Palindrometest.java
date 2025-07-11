@@ -21,4 +21,13 @@ void typicalTest(){
         //then
             assertTrue(result);
 }
+@Test
+    void singleDigitTest(){
+        //given
+        int palindrome = 7;
+        //when
+        boolean result = palindromeSolution.isPalindrome(palindrome);
+        //then
+        assertTrue(result);
+    }
 }
