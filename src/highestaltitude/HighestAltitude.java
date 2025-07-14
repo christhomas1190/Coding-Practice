@@ -10,7 +10,7 @@ public class HighestAltitude {
                 temp += gain[i];
                 //Checks if temp is greater than the highest net altitude
                 if(temp>highestNet){
-                    //i
+                    //if temp is greater that the highestNet altitude, then that number is stored in highestNet
                     highestNet=temp;
                 }
             }
