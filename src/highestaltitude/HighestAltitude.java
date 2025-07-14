@@ -7,7 +7,10 @@ public class HighestAltitude {
 
             for(int i=0; i< gain.length; i++){
                 temp += gain[i];
-                if(temp>highestNet)
+                if(temp>highestNet){
+                    highestNet=temp;
+                }
             }
+        return highestNet;
     }
 }
