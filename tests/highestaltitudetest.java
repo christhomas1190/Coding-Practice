@@ -43,4 +43,14 @@ public class highestaltitudetest {
     assertEquals(output, highestAltitude.findHighestAltitude(gain));
 
 }
+@Test
+    void alternatingNumbersTest(){
+    //Given
+        int[] gain = {1, -1, 2, -2, 3, -3};
+    //when
+    int output=3;
+    //then
+    assertEquals(output, highestAltitude.findHighestAltitude(gain));
+
+}
 }
