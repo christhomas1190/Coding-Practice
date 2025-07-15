@@ -22,4 +22,15 @@ public class highestaltitudetest {
     //then
     assertEquals(output,highestAltitude.findHighestAltitude(gain));
 }
+
+@Test
+    void allNegativeTest(){
+    //Given
+    int[] gain = {-2, -4, -3, -5, -1};
+    //when
+    int output =0;
+    //then
+    assertEquals(output, highestAltitude.findHighestAltitude(gain));
+
+}
 }
