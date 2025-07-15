@@ -53,4 +53,14 @@ public class highestaltitudetest {
     assertEquals(output, highestAltitude.findHighestAltitude(gain));
 
 }
+@Test
+    void endsAtPeakTest(){
+    //Given
+        int[] gain = {3, 2, -5, -1, -2};
+    //when
+    int output=5;
+    //then
+    assertEquals(output, highestAltitude.findHighestAltitude(gain));
+
+}
 }
