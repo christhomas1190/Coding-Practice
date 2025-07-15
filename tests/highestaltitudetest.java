@@ -33,4 +33,14 @@ public class highestaltitudetest {
     assertEquals(output, highestAltitude.findHighestAltitude(gain));
 
 }
+@Test
+    void mixedNumbersTest(){
+    //Given
+    int[] gain = {4, -2, 3, -1, -5, 6};
+    //when
+    int output=5;
+    //then
+    assertEquals(output, highestAltitude.findHighestAltitude(gain));
+
+}
 }
