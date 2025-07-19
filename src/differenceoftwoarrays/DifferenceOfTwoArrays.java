@@ -10,18 +10,24 @@ public class DifferenceOfTwoArrays {
         List<Integer> temp2 = new ArrayList<>();
         List<List<Integer>> result = new ArrayList<>();
 
-        for(int i = 0; i <nums1.length; i++){
+        for(int i = 0; i <nums1.length; i++) {
             int temp = nums1[i];
             boolean found = false;
-            for(int j=0; j<nums2.length;j++){
-                if(temp==nums2[j]){
-                    found=true;
+            for (int j = 0; j < nums2.length; j++) {
+                if (temp == nums2[j]) {
+                    found = true;
                     break;
                 }
             }
-            if(!found==temp1.contains(temp)){
+            if (!found == temp1.contains(temp)) {
                 temp1.add(temp);
             }
-           return result,
+        }
+            for(int i = 0; i<nums2.length; i++){
+                int temp = 0;
+                boolean found = false;
+                for(int j = 0; j<nums2.length)
+            }
+           return result;
     }
 }
