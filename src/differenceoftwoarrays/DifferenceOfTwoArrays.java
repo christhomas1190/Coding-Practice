@@ -19,9 +19,9 @@ public class DifferenceOfTwoArrays {
                     break;
                 }
             }
-
-        }
-
-        return results;
+            if(!found==temp1.contains(temp)){
+                temp1.add(temp);
+            }
+           return result,
     }
 }
