@@ -26,8 +26,13 @@ public class DifferenceOfTwoArrays {
             for(int i = 0; i<nums2.length; i++){
                 int temp = 0;
                 boolean found = false;
-                for(int j = 0; j<nums2.length)
+                for(int j = 0; j<nums2.length;j++){
+                    if(!found&&temp2.contains(temp));
+                    temp2.add(temp);
+                }
             }
+            result.add(temp1);
+            result.add(temp2);
            return result;
     }
 }
