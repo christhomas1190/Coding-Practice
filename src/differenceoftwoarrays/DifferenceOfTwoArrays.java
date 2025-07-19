@@ -13,8 +13,13 @@ public class DifferenceOfTwoArrays {
         for(int i = 0; i <nums1.length; i++){
             int temp = nums1[i];
             boolean found = false;
-           temp1.add(temp)
+            for(int j=0; j<nums2.length;j++){
+                if(temp==nums2[j]){
+                    found=true;
+                    break;
+                }
             }
+
         }
 
         return results;
