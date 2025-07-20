@@ -8,31 +8,39 @@ public class DifferenceOfTwoArrays {
 
         List<Integer> temp1 = new ArrayList<>();
         List<Integer> temp2 = new ArrayList<>();
-        List<List<Integer>> result = new ArrayList<>();
 
-        for(int i = 0; i <nums1.length; i++) {
+        for(int i = 0; i < nums1.length; i++){
             int temp = nums1[i];
             boolean found = false;
-            for (int j = 0; j < nums2.length; j++) {
-                if (temp == nums2[j]) {
+
+            for(int j = 0; j<nums2.length;j++){
+                if(temp==nums2[j]){
                     found = true;
                     break;
                 }
             }
-            if (!found &&temp1.contains(temp)) {
+            if(!found && !temp1.contains(temp)){
                 temp1.add(temp);
             }
         }
-            for(int i = 0; i<nums2.length; i++){
-                int temp = nums2[i];
-                boolean found = false;
-                for(int j = 0; j<nums2.length;j++){
-                    if(!found&&temp2.contains(temp));
-                    temp2.add(temp);
+        for(int i = 0; i < nums2.length; i++){
+            int temp = nums2[i];
+            boolean found = false;
+
+            for(int j = 0; j<nums1.length;j++){
+                if(temp==nums1[j]){
+                    found = true;
+                    break;
                 }
             }
-            result.add(temp1);
-            result.add(temp2);
-           return result;
+            if(!found && !temp2.contains(temp)){
+                temp2.add(temp);
+            }
+
+        }
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(temp1);
+        result.add(temp2);
+        return result;
     }
 }
