@@ -54,4 +54,16 @@ public class differenceoftwoarraystest {
         assertEquals(Arrays.asList(), result.get(0));
         assertEquals(Arrays.asList(1,2,3), result.get(1));
     }
+    @Test
+    void DuplicateNumbersArrays(){
+        //Given
+        nums1 = new int[]{1, 2, 2, 3};
+        nums2 = new int[]{2, 3, 4, 4};
+        //When
+        List<List<Integer>>result=differenceOfTwoArrays.findDifference(nums1,nums2);
+        //Then
+        assertEquals(Arrays.asList(1), result.get(0));
+        assertEquals(Arrays.asList(4), result.get(1));
+    }
+
 }
