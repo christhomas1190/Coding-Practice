@@ -44,14 +44,14 @@ public class differenceoftwoarraystest {
    }
 
     @Test
-    void IdenticalArrays(){
+    void OneEmptyArrays(){
         //Given
-        nums1 = new int[]{5, 10, 15};
-        nums2 = new int[]{5, 10, 15};
+        nums1 = new int[]{};
+        nums2 = new int[]{1, 2, 3};
         //When
         List<List<Integer>>result=differenceOfTwoArrays.findDifference(nums1,nums2);
         //Then
         assertEquals(Arrays.asList(), result.get(0));
-        assertEquals(Arrays.asList(), result.get(1));
+        assertEquals(Arrays.asList(1,2,3), result.get(1));
     }
 }
