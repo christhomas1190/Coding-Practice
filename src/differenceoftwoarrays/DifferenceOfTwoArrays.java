@@ -19,12 +19,12 @@ public class DifferenceOfTwoArrays {
                     break;
                 }
             }
-            if (!found == temp1.contains(temp)) {
+            if (!found &&temp1.contains(temp)) {
                 temp1.add(temp);
             }
         }
             for(int i = 0; i<nums2.length; i++){
-                int temp = 0;
+                int temp = nums2[i];
                 boolean found = false;
                 for(int j = 0; j<nums2.length;j++){
                     if(!found&&temp2.contains(temp));
