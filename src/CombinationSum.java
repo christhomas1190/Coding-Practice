@@ -9,4 +9,14 @@ public class CombinationSum {
         return result;
     }
 
+    private void findCombos(int k,int n,int start, List<Integer>current, List<List<Integer>> results){
+        if(current.size()==k || n==0){
+            return;
+        }
+            for(int i = 0; i <=9; i++){
+                current.add(i);
+                findCombos(k, n-1, i+1, current, results);
+                current.remove(current.size()-1);
+            }
+    }
 }
