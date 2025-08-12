@@ -61,4 +61,18 @@ public class CombinationSumTest {
         assertTrue(actual.isEmpty());
 
     }
+    @Test
+    void twoNumSum() {
+        // Given
+        int k = 2;
+        int n = 17;
+        List<List<Integer>> expected = new ArrayList<>();
+        expected.add(Arrays.asList(8,9));
+
+        // When
+        List<List<Integer>> actual = combinationSum.combinationSumIII(k, n);
+
+        // Then
+        assertEquals(expected, actual);
+    }
 }
