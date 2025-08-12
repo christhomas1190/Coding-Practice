@@ -96,4 +96,21 @@ public class CombinationSumTest {
         // Then
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    void threeAndtwentyTest() {
+        // Given
+        int k = 3;
+        int n =20;
+        List<List<Integer>> expected = new ArrayList<>();
+        expected.add(Arrays.asList(3,8,9));
+        expected.add(Arrays.asList(4,7,9));
+        expected.add(Arrays.asList(5,6,9));
+        expected.add(Arrays.asList(5,7,8));
+
+        // When
+        List<List<Integer>> actual = combinationSum.combinationSumIII(k, n);
+
+        // Then
+        Assertions.assertEquals(expected, actual);
+    }
 }
