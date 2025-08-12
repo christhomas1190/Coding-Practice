@@ -1,4 +1,5 @@
 import combinationsum.CombinationSum;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -74,5 +75,25 @@ public class CombinationSumTest {
 
         // Then
         assertEquals(expected, actual);
+    }
+    @Test
+    void threeAndFifteenTest() {
+        // Given
+        int k = 3;
+        int n = 15;
+        List<List<Integer>> expected = new ArrayList<>();
+        expected.add(Arrays.asList(1, 5, 9));
+        expected.add(Arrays.asList(1, 6, 8));
+        expected.add(Arrays.asList(2, 4, 9));
+        expected.add(Arrays.asList(2, 5, 8));
+        expected.add(Arrays.asList(2, 6, 7));
+        expected.add(Arrays.asList(3, 4, 8));
+        expected.add(Arrays.asList(3, 5, 7));
+        expected.add(Arrays.asList(4, 5, 6));
+        // When
+        List<List<Integer>> actual = combinationSum.combinationSumIII(k, n);
+
+        // Then
+        Assertions.assertEquals(expected, actual);
     }
 }
