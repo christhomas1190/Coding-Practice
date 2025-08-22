@@ -10,6 +10,8 @@ public class MovingZeros {
                 pos++;
             }
         }
-
+        for(int i = pos; i<nums.length; i++){
+            nums[i]=0;
+        }
     }
 }
