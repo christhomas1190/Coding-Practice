@@ -25,4 +25,16 @@ public class movingzerostest {
         assertArrayEquals(expected,nums);
 
     }
+
+    @Test
+    void negativeNumbersTest(){
+        //given
+        int[] nums = {0, -1, -2, -3, -5, -6};
+        int[] expected = {-1, -2, -3, -5, -6, 0};
+        //when
+        movingZeros.moveZeroes(nums);
+        //then
+        assertArrayEquals(expected,nums);
+
+    }
 }
