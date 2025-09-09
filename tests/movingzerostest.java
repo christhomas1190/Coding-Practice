@@ -77,4 +77,14 @@ public class movingzerostest {
         //then
         assertArrayEquals(expected, nums);
     }
+    @Test
+    void singleZerosTest(){
+        //given
+        int[] nums = {0};
+        int[] expected = {0};
+        //when
+        movingZeros.moveZeroes(nums);
+        //then
+        assertArrayEquals(expected, nums);
+    }
 }
